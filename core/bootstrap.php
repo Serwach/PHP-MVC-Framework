@@ -2,7 +2,7 @@
 
 require_once(ROOT . DS . 'config' . DS . 'config.php');
 require_once(ROOT . DS . 'app' . DS . 'lib' . DS . 'helpers' . DS . 'functions.php');
-//require_once(ROOT . DS . 'core' . DS . 'Router.php');
+
 //require_once 'config/config.php';
 //require_once 'app/libs/helpers/functions.php';
 
