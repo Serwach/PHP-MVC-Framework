@@ -19,12 +19,12 @@ class View
 	$viewString = implode(DS, $viewArray);
 	
 	$viewPath = ROOT . DS . 'app' . DS . 'views' . DS . $viewString . '.php';
-//	$layout = ROOT . DS . 'app' . DS . 'views' . DS . 'layouts' . DS . $this->_layout . '.php';
+	$layout = ROOT . DS . 'app' . DS . 'views' . DS . 'layouts' . DS . $this->_layout . '.php';
 	
 	if(file_exists($viewPath))
 	{
             include_once($viewPath);
-//            include_once($layout);
+            include_once($layout);
 	}
 	else 
 	{
