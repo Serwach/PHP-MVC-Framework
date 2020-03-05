@@ -9,9 +9,12 @@ class Home extends Controller
 	
     public function indexAction()
     {
-//	$user = Users::currentUser();
-//	$user->fname = 'Test';
-//	$user->save();
+        $db = DB::getInstance();
+        $contacts = $db->findFirst('contacts', [
+            'conditions' => "fname = 'test2'",
+            'bind' => []
+        ]);
+        debug($contacts);        
 	$this->view->render('home/index');
     }
 }
